@@ -389,7 +389,7 @@
         = COUNTDOWN CLOCK
     -------------------------------------------*/
     if ($("#clock").length) {
-        $('#clock').countdown('2025/03/01', function(event) {
+        $('#clock').countdown('2025/01/11', function(event) {
             var $this = $(this).html(event.strftime(''
             + '<div class="box"><div>%D</div> <span>Days</span> </div>'
             + '<div class="box"><div>%H</div> <span>Hours</span> </div>'
