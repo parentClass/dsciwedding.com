@@ -38,7 +38,7 @@ html {
 }
 
 body {
-  font-family: "Dosis", sans-serif;
+  font-family: "Open Sans", sans-serif;
   background-color: #fff;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
@@ -1134,7 +1134,7 @@ a:focus {
 
 /* Header CSS Start */
 .site-header {
-  border-bottom: 4px double #ececec;
+  border-bottom: 2px double #ececec;
   background-color: #ffffff;
 }
 .site-header .navbar-brand {
@@ -4249,6 +4249,10 @@ a:focus {
     .sponsors-wrapper:nth-of-type(2) {
 		padding-left: 15px;
 	}
+}
+
+.navbar-toggler {
+	color: #07072D !important;
 }
 
 /*# sourceMappingURL=style.css.map 
