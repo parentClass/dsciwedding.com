@@ -2132,7 +2132,7 @@ a:focus {
 @media (max-width: 767px) {
   .site-footer h2 {
     font-size: 35px;
-    font-size: 1.74444rem;
+    font-size: 1.5rem;
     letter-spacing: 1px;
   }
 }
