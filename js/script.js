@@ -466,7 +466,7 @@
                 $("#loader").css("display", "inline-block");
                 $.ajax({
                     type: "POST",
-                    url: "http://localhost:8080/rsvp",
+                    url: "../scripts/conn.php",
                     data: $(form).serialize(),
                     success: function () {
                         $( "#loader").hide();
