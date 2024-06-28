@@ -2125,6 +2125,7 @@ a:focus {
   position: relative;
   z-index: 1;
 }
+
 .site-footer span {
   position: relative;
   z-index: 1;
@@ -4249,7 +4250,6 @@ ul li {
 }
 
 .navigate-link {
-  color: #6e6e6e;
   font-size: 16px;
 }
 
@@ -4257,4 +4257,18 @@ ul li {
   text-align: right;
 }
 
+#accommodation-book-now {
+  font-family: "Arapey", sans-serif;
+  background-color: #F3B6B6 !important;
+  border-color: #F3B6B6 !important;
+}
+
+#accommodation-slogan {
+  color: #fff;
+  margin: 0 0 0.3em;
+  padding: 0 275px;
+  letter-spacing: 2px;
+  position: relative;
+  z-index: 1;
+}
 /*# sourceMappingURL=style.css.map 
