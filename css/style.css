@@ -98,7 +98,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Rox CF", sans-serif;
+  font-family: "Rox CF Bold", sans-serif;
   color: #6e6e6e;
 }
 
@@ -2881,8 +2881,12 @@ a:focus {
   }
 }
 
-.cta h2 span {
+.cta h2 {
   font-family: "Rox CF", sans-serif;
+  font-size: 3rem;
+}
+
+.cta h2 span {
   font-size: 30px;
   font-size: 1.66667rem;
   display: block;
@@ -3465,6 +3469,10 @@ a:focus {
   margin-bottom: 0;
 }
 
+.rsvp-section .form select {
+  background-color: #fff !important;
+}
+
 .rsvp-section .form input,
 .rsvp-section .form select,
 .rsvp-section .form textarea {
@@ -3566,7 +3574,7 @@ a:focus {
 }
 
 .getting-there-section .content p {
-  font-size: 16px !important;
+  font-size: 20px !important;
 }
 
 @media (max-width: 1199px) {
@@ -3636,6 +3644,10 @@ a:focus {
 .gift-registration-section {
   text-align: center;
   padding-bottom: 120px;
+}
+
+#registry-message {
+  font-size: 20px;
 }
 
 .gift-registration-section .gif-registration-slider {
@@ -4234,6 +4246,15 @@ a:focus {
 
 ul li {
   font-family: "Arapey", sans-serif !important;
+}
+
+.navigate-link {
+  color: #6e6e6e;
+  font-size: 16px;
+}
+
+.navigate-col {
+  text-align: right;
 }
 
 /*# sourceMappingURL=style.css.map 
