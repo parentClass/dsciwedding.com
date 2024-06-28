@@ -57,6 +57,11 @@ body {
 }
 
 @font-face {
+  font-family: "Rox CF Bold";
+  src: url("../fonts/rox_cf_bold.otf");
+}
+
+@font-face {
   font-family: "Malibu";
   src: url("../fonts/malibu.ttf");
 }
@@ -1155,6 +1160,7 @@ a:focus {
   border-bottom: 2px double #ececec;
   background-color: #ffffff;
 }
+
 .site-header .navbar-brand {
   font-family: "Great Vibes", cursive;
   font-size: 35px;
@@ -1162,15 +1168,13 @@ a:focus {
   margin: 0;
   text-shadow: 1px 1px 2px #999999;
 }
+
 .site-header .navbar .navbar-nav .nav-item .nav-link {
+  font-family: "Arapey";
   color: #07072D;
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 1.2rem;
   padding: 25px 17px;
 }
-
-
-
 
 @media screen and (min-width: 992px) {
   .site-header #navbar {
@@ -2878,7 +2882,7 @@ a:focus {
 }
 
 .cta h2 span {
-  font-family: "Dosis", sans-serif;
+  font-family: "Rox CF", sans-serif;
   font-size: 30px;
   font-size: 1.66667rem;
   display: block;
@@ -2946,10 +2950,9 @@ a:focus {
 }
 
 .events-section .event .details h3 {
+  font-family: "Rox CF Bold";
   font-size: 20px;
   font-size: 1.11111rem;
-  font-weight: 600;
-  color: #3e3e3e;
   margin: 0 0 0.9em;
   text-transform: uppercase;
 }
@@ -2992,7 +2995,7 @@ a:focus {
 }
 
 .events-section .event .see-location-btn {
-  font-weight: 600;
+  font-family: "Arapey", sans-serif;
   color: #F3B6B6;
   display: inline-block;
   margin-top: 5px;
@@ -3000,6 +3003,10 @@ a:focus {
 
 .events-section .event .see-location-btn:hover {
   color: #F1D3CA;
+}
+
+.event-details li {
+  font-weight: bold;
 }
 
 /*--------------------------------------------------------------
@@ -3042,6 +3049,7 @@ a:focus {
 }
 
 .inportant-people-section .tablist .nav-pills .nav-link {
+  font-family: "Rox CF", sans-serif;
   background-color: rgba(7, 7, 45, 0.1);
   color: #767878;
 }
@@ -3544,6 +3552,8 @@ a:focus {
 }
 
 .rsvp-section .form > #rsvp-reminder ol li {
+  font-family: "Arapey";
+  font-size: 1.2rem;
   color: #fff;
 }
 
@@ -4170,8 +4180,8 @@ a:focus {
 }
 
 .sponsors, .parents {
+  font-family: "Arapey", sans-serif;
   font-size: 1.2rem;
-  
 }
 
 @media (max-width: 1199px) {
@@ -4220,6 +4230,10 @@ a:focus {
 
 .navbar-toggler {
 	color: #07072D !important;
+}
+
+ul li {
+  font-family: "Arapey", sans-serif !important;
 }
 
 /*# sourceMappingURL=style.css.map 
