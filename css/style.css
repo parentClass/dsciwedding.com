@@ -226,9 +226,10 @@ a:focus {
   width: 100%;
   color: #fff;
   padding: 5px 10px;
-  font-size: 16px;
+  font-size: 1rem;
   text-align: center;
   display: none;
+  font-family: 'Arapey', serif;
 }
 
 @media (max-width: 767px) {
@@ -243,7 +244,9 @@ a:focus {
 }
 
 .validate-rsvp-form #error {
-  background-color: #fff;
+  color: #ff0033;
+  font-weight: bold;
+  background-color: #07072D;
 }
 
 /*** music box ***/
@@ -4270,4 +4273,22 @@ ul li {
   position: relative;
   z-index: 1;
 }
+
+.accordion-button:not(.collapsed) {
+  color: #F3B6B6;
+  background-color: #07072d !important;
+}
+
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+
+.accordion-body > ul li:before {
+  content: "- ";
+}
+
+.accordion-body > ul li {
+  font-family: 'Open Sans', serif !important;
+}
+
 /*# sourceMappingURL=style.css.map 

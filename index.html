@@ -808,7 +808,7 @@
                     <div class="col-lg-8 col-md-10">
                         <form id="rsvp-form" class="form validate-rsvp-form row" method="post">
                             <div class="col-md-12 mb-3">
-                                <input type="text" name="fullname" class="form-control" placeholder="Guest name">
+                                <input type="text" name="name" class="form-control" placeholder="Guest name">
                             </div>
                             <div class="col-md-6 mb-3">
                                 <input type="number" name="mobile" class="form-control" placeholder="Phone number">
@@ -820,10 +820,10 @@
                                 <textarea class="form-control" name="message" placeholder="Message/Request"></textarea>
                             </div>
                             <div class="col-md-12 mb-3">
-                                <select class="form-select" aria-label="Default select example">
+                                <select class="form-select" name="is_pasilungan_attending" aria-label="Default select example">
                                     <option selected>Will you attend our Pasilungan on January 10, 2025?</option>
-                                    <option value="yes">Yes, count me in!</option>
-                                    <option value="no">No, thank you</option>
+                                    <option value="true">Yes, count me in!</option>
+                                    <option value="false">No, thank you</option>
                                 </select>
                                 <sub style="color: #fff;font-style: italic;">
                                     *Pasilungan is a tradition in Quezon Province wherein the night before the wedding, a feast and celebration starts. <br/>&nbsp;&nbsp;There will be  tons of games, eating &amp; drinking, dancing and a lot more!
@@ -835,6 +835,7 @@
                                     <li>RSVP is good for one person only.</li>
                                     <li>Little ones aged 7 and below are automatically on the guest list.</li>
                                     <li>Make sure that phone number or email is active and correct so we can contact you for your message or request(s)</li>
+                                    <li>Deadline will be on November 15, 2024. Failure to send your R.S.V.P means you are not attending our wedding.</li>
                                 </ol>
                             </div>
                             <div class="col-md-12 mb-4 submit-btn">
@@ -842,7 +843,7 @@
                                 <span id="loader"><i class="fa fa-refresh fa-spin fa-3x fa-fw"></i></span>
                             </div>
                             <div class="col-md-12 mb-4 success-error-message">
-                                <div id="success">Thank you</div>
+                                <div id="success"></div>
                                 <div id="error"> Error occurred while sending email. Please try again later. </div>
                             </div>
                         </form>

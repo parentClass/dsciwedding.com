@@ -449,9 +449,7 @@
     if ($("#rsvp-form").length) {
         $("#rsvp-form").validate({
             rules: {
-                fullname: {
-                    required: true
-                },
+                name: "required",
                 mobile: "required",
                 email: "required"
             },
@@ -459,30 +457,35 @@
             messages: {
                 name: "Please enter your name",
                 mobile: "Please enter your mobile number",
-                email: "Please enter your email address"
+                email: "Please enter your active email address"
             },
 
             submitHandler: function (form) {
                 $("#loader").css("display", "inline-block");
                 $.ajax({
                     type: "POST",
-                    url: "../scripts/conn.php",
-                    data: $(form).serialize(),
-                    success: function () {
-                        $( "#loader").hide();
-                        $( "#success").slideDown( "slow" );
+                    url: "http://localhost:8080/rsvp",
+                    data: JSON.stringify(Object.fromEntries(new FormData(form))),
+                    success: function (response) {
+                        const j = JSON.parse(response);
+
+                        $("#loader").hide();
+                        $("#success").html(j.message);
+                        $("#success").slideDown("slow");
+
                         setTimeout(function() {
-                        $( "#success").slideUp( "slow" );
-                        }, 3000);
+                            $("#success").slideUp("slow");
+                        }, 10000);
+
                         form.reset();
                     },
-                    error: function(e) {
-                        $( "#loader").hide();
-                        $("#error").html("<ul style='font-weight:bold;'><li>" + e['responseJSON']['messages']['errors'].email + "</li><li>" + e['responseJSON']['messages']['errors'].fullname + "</li></ul>");
-
+                    error: function(err) {
+                        $("#loader").hide();
+                        $("#error").html(err['responseJSON'].message);
                         $( "#error").slideDown( "slow" );
+
                         setTimeout(function() {
-                        $( "#error").slideUp( "slow" );
+                            $( "#error").slideUp( "slow" );
                         }, 10000);
                     }
                 });
@@ -668,7 +671,5 @@
             smallNavFunctionality();
         }, 200));
     });
-
-
 
 })(window.jQuery);
