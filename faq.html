@@ -181,7 +181,7 @@
         categories.forEach(category => {
           $.ajax({
             type: "GET",
-            url: 'http://localhost:8080/faqs/' + category,
+            url: 'https://api.dsciwedding.com/faqs/' + category,
             success: function(response) {
               j = JSON.parse(response);
 

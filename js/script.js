@@ -464,7 +464,7 @@
                 $("#loader").css("display", "inline-block");
                 $.ajax({
                     type: "POST",
-                    url: "http://localhost:8080/rsvp",
+                    url: "https://api.dsciwedding.com/rsvp",
                     data: JSON.stringify(Object.fromEntries(new FormData(form))),
                     success: function (response) {
                         const j = JSON.parse(response);
