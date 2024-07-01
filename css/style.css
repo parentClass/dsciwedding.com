@@ -2158,7 +2158,7 @@ a:focus {
 @media (max-width: 991px) {
   .site-footer h2 {
     font-size: 45px;
-    font-size: 2rem;
+    font-size: 1.5rem !important;
     padding: 0;
   }
 }
@@ -2574,6 +2574,10 @@ a:focus {
   .count-down-section .count-down-clock {
     margin-top: 35px;
   }
+
+  .count-down-section h2 {
+    font-size: 2rem;
+  }
 }
 
 .count-down-section #clock {
@@ -2628,7 +2632,7 @@ a:focus {
 @media (max-width: 991px) {
   .count-down-section #clock .box > div {
     font-size: 30px;
-    font-size: 1.66667rem;
+    font-size: 2rem;
     line-height: 1.3em;
   }
 }
@@ -2937,9 +2941,14 @@ a:focus {
 }
 
 @media (max-width: 991px) {
+  .cta h2 {
+    font-size: 20px;
+    font-size: 2rem;
+  }
+
   .cta h2 span {
     font-size: 20px;
-    font-size: 1.11111rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -4271,21 +4280,24 @@ a:focus {
 
 @media screen and (min-width: 768px) {
 	.parents-wrapper, .sponsors-wrapper {
-		padding-bottom: 0 !important;
 		margin-bottom: 0 !important;
 		border-bottom: 0 !important;
 	}
+
+  .parents-wrapper:nth-of-type(1),
+  .parents-wrapper:nth-of-type(2) {
+    text-align: center;
+  }
 	
-	.parents-wrapper:nth-of-type(1),
-    .sponsors-wrapper:nth-of-type(1) {
-		text-align: right;
-		padding-right: 50px;
+  .sponsors-wrapper:nth-of-type(1) {
+    padding-bottom: 1rem;
+  }
+
+  .sponsors-wrapper:nth-of-type(2),
+  .sponsors-wrapper:nth-of-type(1) {
+		text-align: center;
 	}
-	
-	.parents-wrapper:nth-of-type(2),
-    .sponsors-wrapper:nth-of-type(2) {
-		padding-left: 15px;
-	}
+
 }
 
 .navbar-toggler {
