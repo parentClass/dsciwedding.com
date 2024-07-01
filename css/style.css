@@ -75,14 +75,14 @@ body {
 @media (max-width: 1199px) {
   body {
     font-size: 17px;
-    font-style: 0.94444rem;
+    font-size: 0.94444rem;
   }
 }
 
 @media (max-width: 991px) {
   body {
     font-size: 16px;
-    font-style: 0.88889rem;
+    font-size: 0.88889rem;
   }
 }
 
@@ -1179,6 +1179,12 @@ a:focus {
   padding: 25px 17px;
 }
 
+@media screen and (max-width: 1199px) {
+  .site-header .navbar .navbar-nav .nav-item .nav-link {
+    font-size: 0.9rem;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .site-header #navbar {
     /*** hover effect ***/
@@ -2016,6 +2022,14 @@ a:focus {
   .hero .wedding-announcement .popup-save-the-date {
     bottom: -180px;
   }
+
+  .hero .wedding-announcement .popup-save-the-date h4 {
+    font-size: 1rem;
+  }
+
+  .hero .wedding-announcement .popup-save-the-date .date {
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 991px) {
@@ -2136,7 +2150,7 @@ a:focus {
 @media (max-width: 1199px) {
   .site-footer h2 {
     font-size: 55px;
-    font-size: 2rem;
+    font-size: 1.4rem;
     padding: 0 200px;
   }
 }
@@ -2353,9 +2367,28 @@ a:focus {
 }
 
 @media (max-width: 1199px) {
+  .wedding-couple-section > .img-holder {
+    padding-top: 50px;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-bottom: 0 !important;
+  }
+
+  .wedding-couple-section .details .details-inner p {
+    font-size: 17px;
+    line-height: 1.5em;
+  }
+
+  .wedding-couple-section .details {
+    padding-top: 35px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 0 !important;
+  }
+
   .wedding-couple-section .details h3 {
     font-size: 22px;
-    font-size: 1.22222rem;
+    font-size: 1rem;
   }
 }
 
@@ -2498,7 +2531,7 @@ a:focus {
 @media (max-width: 1199px) {
   .count-down-section h2 {
     font-size: 62px;
-    font-size: 3.44444rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -2588,7 +2621,7 @@ a:focus {
 @media (max-width: 1199px) {
   .count-down-section #clock .box > div {
     font-size: 35px;
-    font-size: 1.94444rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -3239,7 +3272,7 @@ a:focus {
 
 @media (max-width: 1024px) {
   .inportant-people-section .grid .details h3 {
-    font-size: 0.65rem;
+    font-size: 0.60rem;
   }
 }
 
@@ -4253,6 +4286,13 @@ ul li {
 
 .navigate-link {
   font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+  .navigate-link {
+    font-size: 14px;
+  }
+  
 }
 
 .navigate-col {
