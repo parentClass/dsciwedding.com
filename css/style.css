@@ -3276,6 +3276,12 @@ a:focus {
   }
 }
 
+@media (max-width: 1199px) {
+  .inportant-people-section .grid .details h3 {
+    font-size: 0.60rem;
+  }
+}
+
 .inportant-people-section .grid .details > span {
   font-size: 16px;
   font-size: 0.65rem;
@@ -3599,6 +3605,12 @@ a:focus {
   font-family: "Arapey";
   font-size: 1.2rem;
   color: #fff;
+}
+
+@media (max-width: 1199px) {
+  .rsvp-section .form > #rsvp-reminder ol li {
+    font-size: 1rem;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -4292,7 +4304,12 @@ ul li {
   .navigate-link {
     font-size: 14px;
   }
-  
+}
+
+@media (max-width: 1199px) {
+  .navigate-link {
+    font-size: 14px;
+  }
 }
 
 .navigate-col {
