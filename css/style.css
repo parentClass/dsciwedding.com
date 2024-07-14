@@ -4284,21 +4284,17 @@ a:focus {
 		border-bottom: 0 !important;
 	}
 
-  .parents-wrapper:nth-of-type(1),
-  .parents-wrapper:nth-of-type(2) {
+  .parents-wrapper:nth-of-type(1) {
     text-align: center;
   }
-	
-  .sponsors-wrapper:nth-of-type(1) {
-    padding-bottom: 1rem;
-  }
 
-  .sponsors-wrapper:nth-of-type(2),
   .sponsors-wrapper:nth-of-type(1) {
 		text-align: center;
+    padding-bottom: 1rem;
 	}
 
 }
+
 
 .navbar-toggler {
 	color: #07072D !important;
