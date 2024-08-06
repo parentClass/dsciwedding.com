@@ -2759,7 +2759,7 @@ a:focus {
 
 .story-section .story-timeline .text-holder {
   border-top: 1px solid rgba(94, 154, 142, 0.1);
-  padding-top: 45px !important;
+  padding-top: 30px !important;
   position: relative;
 }
 
@@ -4342,7 +4342,7 @@ ul li {
 }
 
 .accordion-button:not(.collapsed) {
-  color: #F3B6B6;
+  color: #fff;
   background-color: #07072d !important;
 }
 
