@@ -2561,6 +2561,10 @@ a:focus {
     font-size: 20px;
     font-size: 1.11111rem;
   }
+
+  .count-down-section .count-down-clock {
+    padding: 0 !important;
+  }
 }
 
 .count-down-section .count-down-clock {
@@ -2602,17 +2606,7 @@ a:focus {
 
 @media (max-width: 767px) {
   .count-down-section #clock > div {
-    width: calc(50% - 5px);
-  }
-}
-
-.count-down-section #clock > div + div {
-  margin-left: 2%;
-}
-
-@media (max-width: 767px) {
-  .count-down-section #clock > div + div {
-    margin: 2px;
+    width: 50%;
   }
 }
 
