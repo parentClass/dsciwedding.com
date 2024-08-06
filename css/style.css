@@ -2608,6 +2608,14 @@ a:focus {
   .count-down-section #clock > div {
     width: 50%;
   }
+
+  .count-down-section #clock > div + div {
+    margin-left: 0% !important;
+  }
+}
+
+.count-down-section #clock > div + div {
+  margin-left: 2%;
 }
 
 .count-down-section #clock .box > div {
