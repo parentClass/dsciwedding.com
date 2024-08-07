@@ -4332,6 +4332,14 @@ ul li {
   border-color: #F3B6B6 !important;
 }
 
+@media (max-width: 767px) {
+  #accommodation-slogan {
+    font-size: 1rem;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
+
 #accommodation-slogan {
   color: #fff;
   margin: 0 0 0.3em;
