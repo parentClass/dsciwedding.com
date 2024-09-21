@@ -2598,11 +2598,6 @@ a:focus {
   float: left;
   text-align: center;
   padding: 15px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -o-border-radius: 5px;
-  -ms-border-radius: 5px;
-  border-radius: 5px;
   border: 5px solid rgba(0, 0, 0, 0.1);
 }
 
