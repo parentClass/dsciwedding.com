@@ -166,14 +166,8 @@
             success: function (response) {
                 const j = JSON.parse(response);
 
-                const e = [];
-
-                e.push(j.ceremony);
-                e.push(j.reception);
-                e.push(j.afterparty);
-
-                if (e.length > 0) {
-                    const f = e.flatMap(i => i).map((image) => {
+                if (j.length > 0) {
+                    const f = j.map((image) => {
                         return { src: image, thumb: image }
                     });
 
