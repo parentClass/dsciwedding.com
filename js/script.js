@@ -580,12 +580,12 @@
             playerVars: {
                 modestbranding: 0,
                 autoplay: 1,
-                controls: 1,
+                controls: 0,
                 showinfo: 0,
                 wmode: 'transparent',
                 branding: 0,
                 rel: 0,
-                autohide: 0,
+                autohide: 1,
                 origin: window.location.origin
             }
         });
