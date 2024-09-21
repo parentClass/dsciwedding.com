@@ -167,25 +167,21 @@
                 const j = JSON.parse(response);
 
                 if (j.length > 0) {
-                    const f = j.map((image, index) => {
-                        return { src: image, thumb: image, title: 'Image ' + index }
+                    const f = j.map((image) => {
+                        return { src: image, thumb: image }
                     });
 
                     $('#ngY2P').nanogallery2({
                         // ### gallery settings ###
-                        thumbnailHeight:  "auto",
-                        thumbnailWidth:   200,
-                        thumbnailBaseGridHeight: 100,
+                        thumbnailWidth: "auto",
+                        thumbnailHeight: 200,
                         galleryTheme: "light",
                         galleryDisplayMode: "pagination",
                         thumbnailDisplayTransition: "scaleUp",
-                        itemsBaseURL:     'https://api.dsciwedding.com/gallery/list',
+                        itemsBaseURL: 'https://api.dsciwedding.com/gallery/list',
                         items: f,
-                        pagination: {
-                            enabled: true, // Enable pagination
-                            maxItems: 1,  // Set maximum items per page
-                            position: 'bottom' // Position of pagination
-                        }
+                        pagination: true,            // Enable pagination
+                        maxItemsPerPage: 5,        // Items per page
                     });
 
                     // update count
