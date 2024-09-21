@@ -3158,7 +3158,7 @@ a:focus {
 
 @media (max-width: 550px) {
   .inportant-people-section .tab-content .grid {
-    width: 100%;
+    width: 50%;
   }
 }
 
