@@ -4372,5 +4372,8 @@ ul li {
   font-family: "Rox CF Bold", sans-serif;
 }
 
-
+.nanogallery_gallerytheme_light_ngY2P .nGY2GThumbnail {
+  background-color: transparent !important;
+  border: none !important;
+}
 /*# sourceMappingURL=style.css.map 
