@@ -110,15 +110,6 @@
             <div class="container">
                 <div class="row">
                     <div class="col col-xs-12">
-                        <div class="section-title">
-                            <div class="vertical-line"><span><i class="fi flaticon-two"></i></span></div>
-                            <h2>Our Memories</h2>
-                        </div>
-                    </div>
-                </div> <!-- end section-title -->
-
-                <div class="row">
-                    <div class="col col-xs-12">
                         <div id="ngY2P"></div>
                     </div>
                 </div> <!-- end row -->
@@ -164,32 +155,37 @@
 
                 const e = [];
 
-                const ceremony = j.ceremony;
-                const reception = j.reception;
-                const afterparty = j.afterparty;
+                e.push(j.ceremony);
+                e.push(j.reception);
+                e.push(j.afterparty);
 
-                e.push(ceremony);
-                e.push(reception);
-                e.push(afterparty);
+                if (e.length > 0) {
+                    $('#ngY2P').nanogallery2({
+                        // ### gallery settings ###
+                        thumbnailHeight:  "auto",
+                        thumbnailWidth:   200,
+                        thumbnailBaseGridHeight: 100,
+                        galleryTheme: "light",
+                        galleryDisplayMode: "pagination",
+                        thumbnailDisplayTransition: "scaleUp",
+                        itemsBaseURL:     'https://api.dsciwedding.com/gallery/list',
+                        items: e.flatMap(i => i).map((image) => {
+                            return { src: image, thumb: image }
+                        }),
+                        pagination: {
+                            enabled: true, // Enable pagination
+                            maxItems: 1,  // Set maximum items per page
+                            position: 'bottom' // Position of pagination
+                        }
+                    });
 
-                $('#ngY2P').nanogallery2({
-                    // ### gallery settings ###
-                    thumbnailHeight:  "auto",
-                    thumbnailWidth:   200,
-                    thumbnailBaseGridHeight: 100,
-                    galleryTheme: "light",
-                    galleryDisplayMode: "pagination",
-                    thumbnailDisplayTransition: "scaleUp",
-                    itemsBaseURL:     'https://api.dsciwedding.com/gallery/list',
-                    items: e.flatMap(i => i).map((image) => {
-                        return { src: image, thumb: image }
-                    }),
-                    pagination: {
-                        enabled: true, // Enable pagination
-                        maxItems: 1,  // Set maximum items per page
-                        position: 'bottom' // Position of pagination
-                    }
-                });
+                    // hide loading
+                    $('.preloader').delay(0).fadeOut(1500);
+                } else {
+                    $('#ngY2P').append(
+                        `<h5>No images were uploaded yet</h5>`
+                    )
+                }
             },
             error: function(err) {
                 
