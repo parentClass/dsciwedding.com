@@ -167,8 +167,8 @@
                 const j = JSON.parse(response);
 
                 if (j.length > 0) {
-                    const f = j.map((image) => {
-                        return { src: image, thumb: image }
+                    const f = j.map((image, index) => {
+                        return { src: image, thumb: image, title: 'Image ' + index }
                     });
 
                     $('#ngY2P').nanogallery2({
@@ -189,7 +189,7 @@
                     });
 
                     // update count
-                    $('#gallery-count').text(f.length + ' photo(s)')
+                    $('#gallery-count').text(f.length + ' image(s)')
 
                     // hide loading
                     $('.preloader').delay(0).fadeOut(1500);
