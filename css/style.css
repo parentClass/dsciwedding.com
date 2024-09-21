@@ -1647,14 +1647,14 @@ a:focus {
 @media (max-width: 1199px) {
   .hero {
     height: calc(100vh - 90px);
-    min-height: 600px;
+    min-height: 100vh;
   }
 }
 
 @media (max-width: 991px) {
   .hero {
     height: calc(100vh - 90px);
-    min-height: 500px;
+    min-height: 100vh;
   }
 }
 
